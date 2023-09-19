@@ -5,6 +5,7 @@ import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import { Link } from "react-router-dom";
+import GithubButton from "../components/github-btn";
 
 // const errors = {
 //   "auth/email-already-in-use" : "That email already exists."
@@ -92,6 +93,7 @@ export default function CreateAccount() {
         Already have an accoutnt? 
         <Link to = "/login">Log in &rarr;</Link>
       </Switcher>
+      <GithubButton/>
     </Wrapper>
   );
 }
